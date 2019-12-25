@@ -497,26 +497,8 @@ F 3 "~" H 10850 4250 50  0001 C CNN
 	1    10850 4250
 	0    -1   -1   0   
 $EndComp
-Text Label 6350 1800 0    50   ~ 0
-row0
 Text Label 6350 2450 0    50   ~ 0
 row1
-Text Label 6350 3100 0    50   ~ 0
-row2
-Text Label 6350 3750 0    50   ~ 0
-row3
-Text Label 6350 4400 0    50   ~ 0
-row4
-Text Label 6850 800  3    50   ~ 0
-col0
-Text Label 7750 800  3    50   ~ 0
-col1
-Text Label 8650 800  3    50   ~ 0
-col2
-Text Label 9550 800  3    50   ~ 0
-col3
-Text Label 10450 800  3    50   ~ 0
-col4
 Wire Wire Line
 	6850 800  6850 1500
 Connection ~ 6850 1500
@@ -1579,7 +1561,7 @@ U 1 1 5E61B9DC
 P 1300 4600
 F 0 "SW23" H 1300 4885 50  0000 C CNN
 F 1 "SW_Push" H 1300 4794 50  0000 C CNN
-F 2 "Button_Switch_SMD:Panasonic_EVQPUL_EVQPUC" H 1300 4800 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 1300 4800 50  0001 C CNN
 F 3 "~" H 1300 4800 50  0001 C CNN
 	1    1300 4600
 	1    0    0    -1  
@@ -1605,4 +1587,145 @@ F 3 "" H 800 4850 50  0001 C CNN
 	1    800  4850
 	1    0    0    -1  
 $EndComp
+Text Label 6350 3750 0    50   ~ 0
+PF7
+Text Label 9550 800  3    50   ~ 0
+PB7
+Text Label 6350 3100 0    50   ~ 0
+PF6
+Text Label 10450 800  3    50   ~ 0
+PD7
+Text Label 6350 1800 0    50   ~ 0
+PD4
+Text Label 8650 800  3    50   ~ 0
+PF5
+Text Label 6350 4400 0    50   ~ 0
+PB6
+$Comp
+L Device:LED D25
+U 1 1 5E8980FE
+P 5700 6900
+F 0 "D25" V 5739 6782 50  0000 R CNN
+F 1 "LED" V 5648 6782 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5700 6900 50  0001 C CNN
+F 3 "~" H 5700 6900 50  0001 C CNN
+	1    5700 6900
+	0    -1   -1   0   
+$EndComp
+Text Label 6850 800  3    50   ~ 0
+PF4
+Text Label 7750 800  3    50   ~ 0
+PF1
+$Comp
+L Device:LED D26
+U 1 1 5E8E6109
+P 6050 6900
+F 0 "D26" V 6089 6782 50  0000 R CNN
+F 1 "LED" V 5998 6782 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6050 6900 50  0001 C CNN
+F 3 "~" H 6050 6900 50  0001 C CNN
+	1    6050 6900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D27
+U 1 1 5E8E6540
+P 6400 6900
+F 0 "D27" V 6439 6782 50  0000 R CNN
+F 1 "LED" V 6348 6782 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6400 6900 50  0001 C CNN
+F 3 "~" H 6400 6900 50  0001 C CNN
+	1    6400 6900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5E8E71F4
+P 5700 6450
+F 0 "R8" H 5770 6496 50  0000 L CNN
+F 1 "1k" H 5770 6405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5630 6450 50  0001 C CNN
+F 3 "~" H 5700 6450 50  0001 C CNN
+	1    5700 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5E8E7CF4
+P 6050 6450
+F 0 "R9" H 6120 6496 50  0000 L CNN
+F 1 "1k" H 6120 6405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5980 6450 50  0001 C CNN
+F 3 "~" H 6050 6450 50  0001 C CNN
+	1    6050 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5E8E809E
+P 6400 6450
+F 0 "R10" H 6470 6496 50  0000 L CNN
+F 1 "1k" H 6470 6405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6330 6450 50  0001 C CNN
+F 3 "~" H 6400 6450 50  0001 C CNN
+	1    6400 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 6600 6400 6750
+Wire Wire Line
+	6050 6600 6050 6750
+Wire Wire Line
+	5700 6600 5700 6750
+Wire Wire Line
+	5700 7050 5700 7350
+Wire Wire Line
+	6050 7050 6050 7350
+Wire Wire Line
+	6400 7050 6400 7350
+$Comp
+L power:GND #PWR0107
+U 1 1 5E919BAF
+P 5700 7350
+F 0 "#PWR0107" H 5700 7100 50  0001 C CNN
+F 1 "GND" H 5705 7177 50  0000 C CNN
+F 2 "" H 5700 7350 50  0001 C CNN
+F 3 "" H 5700 7350 50  0001 C CNN
+	1    5700 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5E919F2B
+P 6050 7350
+F 0 "#PWR0108" H 6050 7100 50  0001 C CNN
+F 1 "GND" H 6055 7177 50  0000 C CNN
+F 2 "" H 6050 7350 50  0001 C CNN
+F 3 "" H 6050 7350 50  0001 C CNN
+	1    6050 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5E91A270
+P 6400 7350
+F 0 "#PWR0109" H 6400 7100 50  0001 C CNN
+F 1 "GND" H 6405 7177 50  0000 C CNN
+F 2 "" H 6400 7350 50  0001 C CNN
+F 3 "" H 6400 7350 50  0001 C CNN
+	1    6400 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 6300 5700 5950
+Wire Wire Line
+	6050 5950 6050 6300
+Wire Wire Line
+	6400 5950 6400 6300
+Text Label 6050 5950 3    50   ~ 0
+PC7
+Text Label 5700 5950 3    50   ~ 0
+PC6
+Text Label 6400 5950 3    50   ~ 0
+PB5
 $EndSCHEMATC
