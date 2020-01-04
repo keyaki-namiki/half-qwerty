@@ -497,8 +497,6 @@ F 3 "~" H 10850 4250 50  0001 C CNN
 	1    10850 4250
 	0    -1   -1   0   
 $EndComp
-Text Label 6350 2450 0    50   ~ 0
-row1
 Wire Wire Line
 	6850 800  6850 1500
 Connection ~ 6850 1500
@@ -1728,4 +1726,6 @@ Text Label 5700 5950 3    50   ~ 0
 PC6
 Text Label 6400 5950 3    50   ~ 0
 PB5
+Text Label 6350 2450 0    50   ~ 0
+PF0
 $EndSCHEMATC

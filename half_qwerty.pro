@@ -1,4 +1,4 @@
-update=Thu 26 Dec 2019 03:32:44 JST
+update=Tue 31 Dec 2019 18:15:17 JST
 version=1
 last_client=kicad
 [general]
